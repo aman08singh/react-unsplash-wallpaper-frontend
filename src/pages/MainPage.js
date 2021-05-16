@@ -57,7 +57,7 @@ export default function MainPage() {
     } else {
       setData([]);
       await apiCall(
-        `https://powerful-headland-42387.herokuapp.com/searchimage?page=${page}&per_page=10&search=${searchTerm}`
+        `https://powerful-headland-42387.herokuapp.com/searchimage?page=${page}&per_page=${perPage}&search=${searchTerm}`
       )
         .then((response) => {
           setData(response.data.results);
