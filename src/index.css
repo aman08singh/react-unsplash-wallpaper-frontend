@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .download-button {
@@ -18,8 +19,10 @@ body {
   transform: rotate(0deg);
 }
 
-@media (max-width: 768px) {
-  .search-button {
-    width: 100%;
-  }
+.sort-dropdown-inner-div {
+  float: right;
+}
+
+.search-button {
+  width: 100%;
 }
